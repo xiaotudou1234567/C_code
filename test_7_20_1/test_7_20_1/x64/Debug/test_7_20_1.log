@@ -1,0 +1,7 @@
+﻿  hello.c
+D:\Code\C语言集训营\test_7_20_1\test_7_20_1\hello.c(8,9): warning C4477: “printf”: 格式字符串“%c”需要类型“int”的参数，但可变参数 1 拥有了类型“char *”
+D:\Code\C语言集训营\test_7_20_1\test_7_20_1\hello.c(8,9): warning C4313: "printf": 格式字符串中的 "%c" 与类型为 "char *" 的参数 1 冲突
+D:\Code\C语言集训营\test_7_20_1\test_7_20_1\hello.c(8,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+D:\Code\C语言集训营\test_7_20_1\test_7_20_1\hello.c(8,9): message : 占位符和其参数预计 4 可变参数，但提供的却是 1 参数
+D:\Code\C语言集训营\test_7_20_1\test_7_20_1\hello.c(8,9): message : 缺失的可变参数 2 为格式字符串“%c”所需
+  test_7_20_1.vcxproj -> D:\Code\C语言集训营\test_7_20_1\x64\Debug\test_7_20_1.exe
