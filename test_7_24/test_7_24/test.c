@@ -119,18 +119,37 @@
 //}
 
 #include <stdio.h>
+#include <math.h>
 
 
-int  main()
+//int  main()
+//{
+//	int i = 0;
+//	double sum = 0.0;
+//	int flag = 1;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		sum += flag * 1.0 / i;
+//		flag = -flag;
+//	}
+//	printf("%lf\n", sum);
+//	return 0;
+//}
+
+
+//打印水仙花数
+int main()
 {
-	int i = 0;
-	double sum = 0.0;
-	int flag = 1;
-	for (i = 1; i <= 100; i++)
+	int i = 100;
+	for (i = 100; i <= 999; i++)
 	{
-		sum += flag * 1.0 / i;
-		flag = -flag;
+		int a = i % 10;
+		int b = (i / 10) % 10;
+		int c = i / 100;
+		if ((a*a*a + b*b*b + c*c*c) == i)
+		{ 
+			printf("水仙花数是：%d\n", i);
+		}	
 	}
-	printf("%lf\n", sum);
 	return 0;
 }
