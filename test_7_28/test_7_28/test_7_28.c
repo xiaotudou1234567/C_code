@@ -174,38 +174,50 @@
 /*实现一个函数is_prime，判断一个数是不是素数。
 利用上面实现的is_prime函数，打印100到200之间的素数。*/
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//void is_prime(int m, int n)
+//{
+//	int i = 0;
+//	int j = 0;
+//
+//	for ( i = m; i <= n; i++)
+//	{
+//		int flag = 1;
+//		for ( j = 2; j <= i-1; j++)
+//		{
+//			if(i%j == 0)
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//
+//		if (flag == 1)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//}
+//
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	scanf("%d %d", &m, &n);
+//
+//	is_prime(m, n);
+//	return 0;
+//}
 
-void is_prime(int m, int n)
-{
-	int i = 0;
-	int j = 0;
 
-	for ( i = m; i <= n; i++)
-	{
-		int flag = 1;
-		for ( j = 2; j <= i-1; j++)
-		{
-			if(i%j == 0)
-			{
-				flag = 0;
-				break;
-			}
-		}
-
-		if (flag == 1)
-		{
-			printf("%d ", i);
-		}
-	}
-}
-
+#include "year.h"
 int main()
 {
-	int m = 0;
-	int n = 0;
-	scanf("%d %d", &m, &n);
+	int year = 0;
+	scanf("%d", &year);
 
-	is_prime(m, n);
+	lun_year(year);
+
 	return 0;
 }
